@@ -1,3 +1,3 @@
-import _functions as _fun2
+import _functions as fun
 
-_fun2.run()
+fun.run()
