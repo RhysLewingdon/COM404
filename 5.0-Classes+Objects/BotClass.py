@@ -9,16 +9,16 @@ class Bot:
         print("The name of the bot is: \n"+self.name)
 
     def display_age(self):
-        print("The age of the bot is: \n"+str(self.age))
+        print("The age of the bot is: "+str(self.age))
 
     def display_energy(self):
-        print("The bot energy level is at: \n"+str(self.energy))
+        print("The bot energy level is at: "+str(self.energy))
 
     def display_shield(self):
-        print("The bot shield level is at: \n"+str(self.shield))
+        print("The bot shield level is at: "+str(self.shield))
 
     def display_summary(self):
-        print("The Bot \n{}\n is \n{}\n years old and has \n{}\n energy and \n{}\n shield.".format(self.name, self.age, self.energy, self.shield))
+        print("The Bot \n{}\n is {} years old and has {} energy and {} shield.".format(self.name, self.age, self.energy, self.shield))
 
     def __str__(self):
         return 'Bot(name='+self.name+', age='+str(self.age)+', energy='+str(self.energy)+', shield='+str(self.shield) + ')'
