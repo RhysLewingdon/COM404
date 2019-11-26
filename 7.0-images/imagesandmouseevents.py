@@ -22,16 +22,12 @@ class Gui(Tk):
 
         self.bus_image_label = Label(self.map_frame)
         self.bus_image_label.place(x=10, y=10)
-        self.bus_image_label.configure(image=bus_image)
+        self.bus_image_label.configure(image=self.bus_image)
 
-        def map_image_label(self):
-            self.map_image_label = Label()
-            self.map_image_label.configure(image=self.map_image)
-
-        def bus_image_label(self):
-            self.bus_image_label = Label()
-            self.bus_image_label.configure(image=self.bus_image)
-
+    def bus_move(self, event):
+        messagebox.showinfo("Bus Journey Gui", "Mouse x is" + str(event.x))
+        messagebox.showinfo("Bus Journey Gui", "Mouse y is" + str(event.y))
+        
 # Create an object of the Gui class when this module is executed
 if (__name__ == "__main__"):
     gui = Gui()
