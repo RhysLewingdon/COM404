@@ -37,7 +37,7 @@ class AnimatedGui(Tk):
         if self.umbrella_x_pos > 980:
             self.umbrella_x_change = -2
 
-        if self.umbrella_y_pos > 510:
+        if self.umbrella_y_pos > 480:
             self.umbrella_y_change = -1
 
         if self.umbrella_x_pos < 0:
